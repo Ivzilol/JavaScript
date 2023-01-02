@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Element</title>
+</head>
+<body>
+    <h1>
+        Doom Intoduction Demo
+    </h1>
+    <ul>
+        <li>Doom properties Example</li>
+        <li>Doom Methods Example</li>
+    </ul>
+    <input>
+    <script>
+        function edit(element, match, replacer) {
+            const text = element.textContent;
+            const result = text.split(match).join(replacer);
+            element.textContent = result;
+        }
+    </script>
+</body>
+</html>
